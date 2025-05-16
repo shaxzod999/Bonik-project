@@ -500,7 +500,7 @@ function App() {
                 <p>{item.title}</p>
                 <span>{item.description}</span>
                 <p className="cost">${item.price}</p>
-                {/* {localStorage.getItem("token") || token === "admin" ? ( */}
+                {localStorage.getItem("token") || token === "admin" ? (
                   <button
                     onClick={() => addcard(item)}
                     disabled={
@@ -521,9 +521,9 @@ function App() {
                         : "в карзину"
                     }`}
                   </button>
-                {/* ) : ( */}
-                  {/* "" */}
-                {/* )} */}
+                ) : (
+                  ""
+                )}
                 {localStorage.getItem("token") || token === "admin" ? (
                   <button
                     onClick={() => addcard2(item)}
