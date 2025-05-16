@@ -38,7 +38,6 @@ function AppRouter() {
         <Route path="/video-cards" element={<VideoCards />} />
         <Route path="/monitors" element={<Monitors />} />
       </Routes>
-      <SpeedInsights />
     </BrowserRouter>
   );
 }
