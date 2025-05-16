@@ -1,5 +1,4 @@
 import React from "react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../App";
 import AddProduct from "./AddProduct";
