@@ -1,5 +1,5 @@
 import React from "react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+// import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../App";
 import AddProduct from "./AddProduct";
@@ -38,7 +38,7 @@ function AppRouter() {
         <Route path="/video-cards" element={<VideoCards />} />
         <Route path="/monitors" element={<Monitors />} />
       </Routes>
-      <SpeedInsights />
+      {/* <SpeedInsights /> */}
     </BrowserRouter>
   );
 }
