@@ -501,26 +501,7 @@ function App() {
                 <span>{item.description}</span>
                 <p className="cost">${item.price}</p>
                 {localStorage.getItem("token") || token === "admin" ? (
-                  <button
-                    onClick={() => addcard(item)}
-                    disabled={
-                      cards.some((cardItem) => cardItem.id == item.id)
-                        ? true
-                        : false
-                    }
-                    className={`${
-                      cards.some((cardItem) => cardItem.id == item.id)
-                        ? "btn2"
-                        : "btn1"
-                    }`}
-                  >
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    {`${
-                      cards.some((cardItem) => cardItem.id == item.id)
-                        ? "добовлено"
-                        : "в карзину"
-                    }`}
-                  </button>
+                  ""
                 ) : (
                   ""
                 )}
