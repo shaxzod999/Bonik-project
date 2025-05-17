@@ -68,7 +68,7 @@ const Card = () => {
     <div
       className="container"
       style={{
-        marginBottom: "350px",
+        marginBottom: "300px",
       }}
     >
       <Navbar />

@@ -7,6 +7,8 @@ function Navbar() {
   const token = localStorage.getItem("token");
 
   const [showDropdown, setShowDropdown] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const dropdownRef = useRef(null);
 
   const handleDropdownClick = () => {
@@ -73,8 +75,23 @@ function Navbar() {
     <div className="App1">
       <div className="cintainer-big1">
         <div className="Navbar">
-          <div className="container11">
-            <Link to={"/"}>
+          <div className="mobileMenuOpen">
+            <Link className="logo" to={"/"}>
+              <img
+                src="https://bonik-react.vercel.app/assets/images/logo.svg"
+                alt=""
+              />
+            </Link>
+            <div
+              className="mobile-toggle"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <i className="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <div className={`container11 ${mobileMenuOpen ? "open" : ""}`}>
+            <Link className="logo-2" to={"/"}>
               <img
                 src="https://bonik-react.vercel.app/assets/images/logo.svg"
                 alt=""
@@ -84,7 +101,6 @@ function Navbar() {
               <button onClick={handleDropdownClick}>
                 Каталог товаров <i className="fa-solid fa-caret-down"></i>
               </button>
-
               {showDropdown && (
                 <div
                   className="dropdown-content"
@@ -92,10 +108,10 @@ function Navbar() {
                 >
                   <Link
                     className="Link"
-                    to={`/laptops`}
+                    to="/laptops"
                     onClick={() => setShowDropdown(false)}
                   >
-                    <p style={{ color: "#000" }}>Ноутбуки</p>
+                    <p>Ноутбуки</p>
                   </Link>
                   <Link
                     className="Link"
@@ -156,7 +172,8 @@ function Navbar() {
                 </div>
               )}
             </div>
-            <div className="inp">
+
+            <div className="inp d2">
               <input
                 onClick={handleSearchClick}
                 onChange={(event) => setValue(event.target.value)}
@@ -164,8 +181,9 @@ function Navbar() {
                 placeholder="Tavarlarni izlash"
               />
             </div>
-            <div style={{ display: "flex", gap: "15px" }}>
-              {token !== "admin" ? (
+
+            <div className="menu-links">
+              {token !== "admin" && (
                 <>
                   <Link
                     className="cards"
@@ -219,34 +237,27 @@ function Navbar() {
                     </div>
                   </Link>
                 </>
-              ) : (
-                ""
               )}
-              {/* {token ? (
-                <button onClick={logout} className="btn3">
-                  <i className="fa-solid fa-user-slash"></i>
-                </button>
-              ) : (
-                <Link to={"/login"}>
-                  <button className="btn3">
-                    <i className="fa-solid fa-user"></i>
-                  </button>
-                </Link>
-              )} */}
-<Link to={"/login"}>
+              <Link to="/login">
                 <button className="btn3">
                   <i className="fa-solid fa-user"></i>
                 </button>
               </Link>
+              {token === "admin" && (
+                <Link to="/add-product">
+                  <button className="btn33">Add</button>
+                </Link>
+              )}
             </div>
 
-            {token === "admin" ? (
-              <Link to={"/add-product"}>
-                <button className="btn33">Add</button>
-              </Link>
-            ) : (
-              ""
-            )}
+            <div className="inp d1">
+              <input
+                onClick={handleSearchClick}
+                onChange={(event) => setValue(event.target.value)}
+                type="text"
+                placeholder="Tavarlarni izlash"
+              />
+            </div>
           </div>
         </div>
       </div>

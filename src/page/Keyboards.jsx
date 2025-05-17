@@ -47,6 +47,7 @@ function Keyboards() {
   return (
     <div>
       <Navbar />
+      <h2 className="h2">Клавиатуры</h2>
 
       <div className="Card">
         <div className="container1">

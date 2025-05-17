@@ -13,6 +13,7 @@ function App() {
   const token = localStorage.getItem("token");
 
   const [showDropdown, setShowDropdown] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   const handleDropdownClick = () => {
@@ -79,54 +80,32 @@ function App() {
     <div className="App">
       <div className="container-big1">
         <div className="Navbar">
-          <div className="container11">
-            <Link to={"/"}>
+          <div className="mobileMenuOpen">
+            <Link className="logo" to={"/"}>
               <img
                 src="https://bonik-react.vercel.app/assets/images/logo.svg"
                 alt=""
               />
             </Link>
-            {/* <div className="dropdown-container">
-              <button onClick={handleDropdownClick}>
-                Каталог товаров <i class="fa-solid fa-caret-down"></i>
-              </button>
-              {showDropdown && (
-                <div className="dropdown-content">
-                  <a href="/Laptops">
-                    <p>Ноутбуки</p>
-                  </a>
-                  <Link to={"/"}>
-                    <p>Мониторы</p>
-                  </Link>
-                  <Link to={"/"}>
-                    <p>Мышки</p>
-                  </Link>
-                  <Link to={"/"}>
-                    <p>Клавиатуры</p>
-                  </Link>
-                  <Link to={"/"}>
-                    <p>Видеокарты</p>
-                  </Link>
-                  <Link to={"/"}>
-                    <p>Процессоры</p>
-                  </Link>
-                  <Link to={"/"}>
-                    <p>Микрофоны</p>
-                  </Link>
-                  <Link to={"/"}>
-                    <p>Наушники</p>
-                  </Link>
-                  <Link to={"/"}>
-                    <p>Телефоны</p>
-                  </Link>
-                </div>
-              )}
-            </div> */}
+            <div
+              className="mobile-toggle"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              <i className="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <div className={`container11 ${mobileMenuOpen ? "open" : ""}`}>
+            <Link className="logo-2" to={"/"}>
+              <img
+                src="https://bonik-react.vercel.app/assets/images/logo.svg"
+                alt=""
+              />
+            </Link>
             <div className="dropdown-container" ref={dropdownRef}>
               <button onClick={handleDropdownClick}>
                 Каталог товаров <i className="fa-solid fa-caret-down"></i>
               </button>
-
               {showDropdown && (
                 <div
                   className="dropdown-content"
@@ -134,10 +113,10 @@ function App() {
                 >
                   <Link
                     className="Link"
-                    to={`/laptops`}
+                    to="/laptops"
                     onClick={() => setShowDropdown(false)}
                   >
-                    <p style={{ color: "#000" }}>Ноутбуки</p>
+                    <p>Ноутбуки</p>
                   </Link>
                   <Link
                     className="Link"
@@ -198,7 +177,8 @@ function App() {
                 </div>
               )}
             </div>
-            <div className="inp">
+
+            <div className="inp d2">
               <input
                 onClick={handleSearchClick}
                 onChange={(event) => setValue(event.target.value)}
@@ -206,8 +186,9 @@ function App() {
                 placeholder="Tavarlarni izlash"
               />
             </div>
-            <div style={{ display: "flex", gap: "15px" }}>
-              {token !== "admin" ? (
+
+            <div className="menu-links">
+              {token !== "admin" && (
                 <>
                   <Link
                     className="cards"
@@ -261,174 +242,52 @@ function App() {
                     </div>
                   </Link>
                 </>
-              ) : (
-                ""
               )}
-              {/* {token ? (
-                <button onClick={logout} className="btn3">
-                  <i className="fa-solid fa-user-slash"></i>
-                </button>
-              ) : (
-                <Link to={"/login"}>
-                  <button className="btn3">
-                    <i className="fa-solid fa-user"></i>
-                  </button>
-                </Link>
-              )} */}
-              <Link to={"/login"}>
+              <Link to="/login">
                 <button className="btn3">
                   <i className="fa-solid fa-user"></i>
                 </button>
               </Link>
+              {token === "admin" && (
+                <Link to="/add-product">
+                  <button className="btn33">Add</button>
+                </Link>
+              )}
             </div>
 
-            {token === "admin" ? (
-              <Link to={"/add-product"}>
-                <button className="btn33">Add</button>
-              </Link>
-            ) : (
-              ""
-            )}
+            <div className="inp d1">
+              <input
+                onClick={handleSearchClick}
+                onChange={(event) => setValue(event.target.value)}
+                type="text"
+                placeholder="Tavarlarni izlash"
+              />
+            </div>
           </div>
         </div>
 
         {searchVisible && (
           <div className="container5555">
-            <div className="Section-swiper">
-              <swiper-container
-                className="mySwiper"
-                pagination="true"
-                pagination-dynamic-bullets="true"
-                navigation="false"
+            <div>
+              <h4 style={{ fontSize: "45px" }}>Будь в потоке. </h4>
+              <h1 style={{ fontSize: "65px" }}>Будь с  BONIK</h1>
+              <h4>
+                СКИДКИ ДО
+                <span style={{ fontSize: "24px", color: "rgb(233, 69, 96)" }}>
+                  -30%
+                </span>
+              </h4>
+              <p>Бесплатная доставка при заказе от $99.00</p>
+              <button
+                className="btn22"
+                style={{
+                  fontSize: "17px",
+                  width: "138px",
+                  height: "40px",
+                }}
               >
-                <swiper-slide>
-                  <div>
-                    <h4 style={{ fontSize: "45px" }}>Коллекция стиля жизни</h4>
-                    <h1 style={{ fontSize: "65px" }}>Мужчины</h1>
-                    <h4>
-                      СКИДКИ ДО{" "}
-                      <span
-                        style={{ fontSize: "24px", color: "rgb(233, 69, 96)" }}
-                      >
-                        -30%
-                      </span>
-                    </h4>
-                    <p>Бесплатная доставка при заказе от $99.00</p>
-                    <button
-                      className="btn22"
-                      style={{
-                        fontSize: "17px",
-                        width: "138px",
-                        height: "40px",
-                      }}
-                    >
-                      Купить сейчас
-                    </button>
-                  </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div>
-                    <h4 style={{ fontSize: "45px" }}>Коллекция стиля жизни</h4>
-                    <h1 style={{ fontSize: "65px" }}>Женщины</h1>
-                    <h4>
-                      СКИДКИ ДО{" "}
-                      <span
-                        style={{ fontSize: "24px", color: "rgb(233, 69, 96)" }}
-                      >
-                        -30%
-                      </span>
-                    </h4>
-                    <p>Бесплатная доставка при заказе от $99.00</p>
-                    <button
-                      className="btn22"
-                      style={{
-                        fontSize: "17px",
-                        width: "138px",
-                        height: "40px",
-                      }}
-                    >
-                      Купить сейчас
-                    </button>
-                  </div>
-                </swiper-slide>
-              </swiper-container>
-            </div>
-            <div className="container12">
-              {/* <div className="slider middle">
-                <div className="slides">
-                  <input type="radio" name="r" id="r1" checked />
-                  <input type="radio" name="r" id="r2" />
-
-                  <div
-                    className="slide s1"
-                    style={{
-                      color: "rgb(43, 52, 69)",
-                      backgroundImage:
-                        'url("https://bonik-react.vercel.app/assets/images/banners/banner-15.jpg")',
-                      backgroundSize: "cover",
-                    }}
-                  ></div>
-                  <div
-                    className="slide"
-                    style={{
-                      color: "rgb(43, 52, 69)",
-                      backgroundImage:
-                        'url("https://bonik-react.vercel.app/assets/images/banners/banner-25.jpg")',
-                      backgroundSize: "cover",
-                    }}
-                  ></div>
-                </div>
-                <div className="navigation">
-                  <label htmlFor="r1" className="bar"></label>
-                  <label htmlFor="r2" className="bar"></label>
-                </div>
-              </div> */}
-              {/* <div>
-                <div
-                  style={{
-                    color: "rgb(43, 52, 69)",
-                    marginTop: "90px",
-                    paddingTop: "40px",
-                    paddingLeft: "20px",
-                    width: "285px",
-                    height: "230px",
-                    backgroundColor: "#000",
-                    marginLeft: "870px",
-                    backgroundSize: "100% 100%",
-                    backgroundImage:
-                      'url("https://bonik-react.vercel.app/assets/images/banners/banner-17.jpg")',
-                  }}
-                >
-                  <p>NEW ARRIVALS</p>
-                  <h4>
-                    SUMMER <br />
-                    SALE 20% OFF <br />{" "}
-                    <span style={{ fontSize: "15px" }}>Shop Now</span>
-                  </h4>
-                </div>
-                <div
-                  style={{
-                    marginTop: "20px",
-                    color: "rgb(43, 52, 69)",
-                    paddingTop: "40px",
-                    paddingLeft: "20px",
-                    width: "285px",
-                    height: "230px",
-                    backgroundColor: "#000",
-                    marginLeft: "870px",
-                    backgroundSize: "100% 100%",
-                    backgroundImage:
-                      'url("https://bonik-react.vercel.app/assets/images/banners/banner-16.jpg")',
-                  }}
-                >
-                  <p>GAMING 4K</p>
-                  <h4>
-                    DESKTOPS &<br />
-                    LAPTOPS <br />{" "}
-                    <span style={{ fontSize: "15px" }}>Shop Now</span>
-                  </h4>
-                </div>
-              </div> */}
+                Купить сейчас
+              </button>
             </div>
           </div>
         )}
@@ -490,7 +349,7 @@ function App() {
           </div>
         )}
 
-        <div className="Card">
+        <div className="Card" style={{ marginTop: "120px" }}>
           <div className="container1">
             {filteredUsers.map((item, index) => (
               <div key={index} className="map">
@@ -500,30 +359,26 @@ function App() {
                 <p>{item.title}</p>
                 <span>{item.description}</span>
                 <p className="cost">${item.price}</p>
-                {/* {localStorage.getItem("token") || token === "admin" ? ( */}
-                  <button
-                    onClick={() => addcard(item)}
-                    disabled={
-                      cards.some((cardItem) => cardItem.id == item.id)
-                        ? true
-                        : false
-                    }
-                    className={`${
-                      cards.some((cardItem) => cardItem.id == item.id)
-                        ? "btn2"
-                        : "btn1"
-                    }`}
-                  >
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    {`${
-                      cards.some((cardItem) => cardItem.id == item.id)
-                        ? "добовлено"
-                        : "в карзину"
-                    }`}
-                  </button>
-                {/* ) : ( */}
-                  {/* "" */}
-                {/* )} */}
+                <button
+                  onClick={() => addcard(item)}
+                  disabled={
+                    cards.some((cardItem) => cardItem.id == item.id)
+                      ? true
+                      : false
+                  }
+                  className={`${
+                    cards.some((cardItem) => cardItem.id == item.id)
+                      ? "btn2"
+                      : "btn1"
+                  }`}
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  {`${
+                    cards.some((cardItem) => cardItem.id == item.id)
+                      ? "добовлено"
+                      : "в карзину"
+                  }`}
+                </button>
                 {localStorage.getItem("token") || token === "admin" ? (
                   <button
                     onClick={() => addcard2(item)}
@@ -549,7 +404,6 @@ function App() {
                 ) : (
                   ""
                 )}
-                {/* "fa-regular fa-heart heart2" */}
               </div>
             ))}
           </div>

@@ -47,6 +47,7 @@ function Headphones() {
   return (
     <div>
       <Navbar />
+      <h2 className="h2">Наушники</h2>
 
       <div className="Card">
         <div className="container1">

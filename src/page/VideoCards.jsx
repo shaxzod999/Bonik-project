@@ -47,6 +47,7 @@ function VideoCards() {
   return (
     <div>
       <Navbar />
+      <h2 className="h2">Видеокарты</h2>
 
       <div className="Card">
         <div className="container1">

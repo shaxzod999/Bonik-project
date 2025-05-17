@@ -47,6 +47,7 @@ function Processors() {
   return (
     <div>
       <Navbar />
+      <h2 className="h2">Процессоры</h2>
 
       <div className="Card">
         <div className="container1">

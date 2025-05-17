@@ -47,6 +47,7 @@ function Laptops() {
   return (
     <div>
       <Navbar />
+      <h2 className="h2">Ноутбуки</h2>
 
       <div className="Card">
         <div className="container1">

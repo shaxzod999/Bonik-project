@@ -47,6 +47,7 @@ function Microphones() {
   return (
     <div>
       <Navbar />
+      <h2 className="h2">Микрофоны</h2>
 
       <div className="Card">
         <div className="container1">

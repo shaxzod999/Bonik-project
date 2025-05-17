@@ -47,6 +47,7 @@ function Mice() {
   return (
     <div>
       <Navbar />
+      <h2 className="h2">Мышки</h2>
 
       <div className="Card">
         <div className="container1">
