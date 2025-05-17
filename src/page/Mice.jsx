@@ -19,7 +19,7 @@ function Mice() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/mice").then((res) => {
+    axios.get("https://bonik-project.onrender.com/mice").then((res) => {
       setUsers(res.data);
     });
   }, []);

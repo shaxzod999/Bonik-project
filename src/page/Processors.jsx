@@ -19,7 +19,7 @@ function Processors() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/processors").then((res) => {
+    axios.get("https://bonik-project.onrender.com/processors").then((res) => {
       setUsers(res.data);
     });
   }, []);

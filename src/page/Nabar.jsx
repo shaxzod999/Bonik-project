@@ -27,7 +27,7 @@ function Navbar() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get(" http://localhost:3001/products").then((res) => {
+    axios.get("https://bonik-project.onrender.com/products").then((res) => {
       setUsers(res.data);
     });
 

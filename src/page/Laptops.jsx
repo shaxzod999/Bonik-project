@@ -19,7 +19,7 @@ function Laptops() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/laptops").then((res) => {
+    axios.get("https://bonik-project.onrender.com/laptops").then((res) => {
       setUsers(res.data);
     });
   }, []);

@@ -19,7 +19,7 @@ function Keyboards() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/keyboards").then((res) => {
+    axios.get("https://bonik-project.onrender.com/keyboards").then((res) => {
       setUsers(res.data);
     });
   }, []);

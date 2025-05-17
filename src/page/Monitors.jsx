@@ -19,7 +19,7 @@ function Monitors() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/monitors").then((res) => {
+    axios.get("https://bonik-project.onrender.com/monitors").then((res) => {
       setUsers(res.data);
     });
   }, []);

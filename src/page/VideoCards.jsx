@@ -19,7 +19,7 @@ function VideoCards() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/video-cards").then((res) => {
+    axios.get("https://bonik-project.onrender.com/video-cards").then((res) => {
       setUsers(res.data);
     });
   }, []);

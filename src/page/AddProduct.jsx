@@ -9,7 +9,7 @@ const AddProduct = () => {
 
     const addProduct = (event) => {
         event.preventDefault()
-        axios.post(`http://localhost:3001/products/`, inputData)
+        axios.post(`https://bonik-project.onrender.com/products`, inputData)
         .then(res=>{
             navigate('/')
         }).catch(console.log(err))

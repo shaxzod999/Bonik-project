@@ -19,7 +19,7 @@ function Headphones() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/headphones").then((res) => {
+    axios.get("https://bonik-project.onrender.com/headphones").then((res) => {
       setUsers(res.data);
     });
   }, []);

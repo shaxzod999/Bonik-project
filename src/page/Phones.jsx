@@ -19,7 +19,7 @@ function Phones() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/phones").then((res) => {
+    axios.get("https://bonik-project.onrender.com/phones").then((res) => {
       setUsers(res.data);
     });
   }, []);
