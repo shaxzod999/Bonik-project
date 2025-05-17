@@ -86,7 +86,7 @@ const Card = () => {
         }}
       >
         <h3>
-        Общая стоимость : {totalPrices?.reduce((acc, price) => acc + price, 0)}$
+        Общая стоимость : {totalPrices?.reduce((acc, price) => acc + price, 0)} $
         </h3>
         {JSON.parse(localStorage.getItem("card"))?.length > 0 ? (
           <button onClick={order} className="btn1">

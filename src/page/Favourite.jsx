@@ -14,7 +14,7 @@ const Favourite = () => {
 
   const decreament = (index) => {
     const newCount = [...counts2];
-    if (newCount[index] > 1) {
+    if (newCount[index] > 2) {
       newCount[index]--;
       setCounts2(newCount);
       upgradeLocalStorage(index, newCount[index]);
@@ -34,7 +34,7 @@ const Favourite = () => {
   return (
     <div className="App">
       <Navbar />
-      <h2 className="h2">Избранное </h2>
+      <h2 className="h2-1">Избранное </h2>
       {
         <div className="Card">
           <div className="container1">

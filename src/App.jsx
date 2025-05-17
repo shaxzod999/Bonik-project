@@ -377,31 +377,27 @@ function App() {
                       : "в карзину"
                   }`}
                 </button>
-                {localStorage.getItem("token") || token === "admin" ? (
-                  <button
-                    onClick={() => addcard2(item)}
-                    disabled={
+                <button
+                  onClick={() => addcard2(item)}
+                  disabled={
+                    cards2.some((cardItem2) => cardItem2.id == item.id)
+                      ? true
+                      : false
+                  }
+                  className={`${
+                    cards2.some((cardItem2) => cardItem2.id == item.id)
+                      ? "heart2-btn"
+                      : "heart2-btn"
+                  }`}
+                >
+                  <i
+                    class={`${
                       cards2.some((cardItem2) => cardItem2.id == item.id)
-                        ? true
-                        : false
-                    }
-                    className={`${
-                      cards2.some((cardItem2) => cardItem2.id == item.id)
-                        ? "heart2-btn"
-                        : "heart2-btn"
+                        ? "fa-solid fa-heart heart2"
+                        : "fa-regular fa-heart heart2"
                     }`}
-                  >
-                    <i
-                      class={`${
-                        cards2.some((cardItem2) => cardItem2.id == item.id)
-                          ? "fa-solid fa-heart heart2"
-                          : "fa-regular fa-heart heart2"
-                      }`}
-                    ></i>
-                  </button>
-                ) : (
-                  ""
-                )}
+                  ></i>
+                </button>
               </div>
             ))}
           </div>
@@ -417,9 +413,10 @@ function App() {
                 />
               </li>
               <p>
-                Мы собрали для вас самые современные гаджеты, <br /> устройства и умные
-                решения. Качество, надежность и быстрая <br /> доставка— всё в одном
-                месте. Выбирайте <br /> технологии с умом — выбирайте BONIK.
+                Мы собрали для вас самые современные гаджеты, <br /> устройства
+                и умные решения. Качество, надежность и быстрая <br /> доставка—
+                всё в одном месте. Выбирайте <br /> технологии с умом —
+                выбирайте BONIK.
               </p>
               <div className="google-play app-store">
                 <div class="sc-19ecb654-0 sc-f2642c76-0 fWfugU dGfhAS">
