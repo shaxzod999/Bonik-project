@@ -72,6 +72,7 @@ const Card = () => {
       }}
     >
       <Navbar />
+      <h2 className="h2-1">Корзина</h2>
       <div
         style={{
           width: "100%",
@@ -85,7 +86,7 @@ const Card = () => {
         }}
       >
         <h3>
-          Total Price : {totalPrices?.reduce((acc, price) => acc + price, 0)}$
+        Общая стоимость : {totalPrices?.reduce((acc, price) => acc + price, 0)}$
         </h3>
         {JSON.parse(localStorage.getItem("card"))?.length > 0 ? (
           <button onClick={order} className="btn1">

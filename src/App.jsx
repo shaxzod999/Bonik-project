@@ -269,13 +269,11 @@ function App() {
         {searchVisible && (
           <div className="container5555">
             <div>
-              <h4 style={{ fontSize: "45px" }}>Будь в потоке. </h4>
-              <h1 style={{ fontSize: "65px" }}>Будь с  BONIK</h1>
-              <h4>
+              <h4 className="h4">Будь в потоке. </h4>
+              <h1 className="h1">Будь с BONIK</h1>
+              <h4 className="h4-1">
                 СКИДКИ ДО
-                <span style={{ fontSize: "24px", color: "rgb(233, 69, 96)" }}>
-                  -30%
-                </span>
+                <span>-30%</span>
               </h4>
               <p>Бесплатная доставка при заказе от $99.00</p>
               <button
@@ -419,10 +417,9 @@ function App() {
                 />
               </li>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit.
-                Auctor libero id et, in gravida. Sit diam duis mauris <br />{" "}
-                nulla cursus. Erat et lectus vel ut sollicitudin elit at <br />{" "}
-                amet.
+                Мы собрали для вас самые современные гаджеты, <br /> устройства и умные
+                решения. Качество, надежность и быстрая <br /> доставка— всё в одном
+                месте. Выбирайте <br /> технологии с умом — выбирайте BONIK.
               </p>
               <div className="google-play app-store">
                 <div class="sc-19ecb654-0 sc-f2642c76-0 fWfugU dGfhAS">

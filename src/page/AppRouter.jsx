@@ -15,10 +15,12 @@ import Microphones from "./Microphones";
 import Processors from "./Processors";
 import VideoCards from "./VideoCards";
 import Monitors from "./Monitors";
+import ScrollToTop from "./ScrollToTop";
 
 function AppRouter() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/add-product" element={<AddProduct />} />

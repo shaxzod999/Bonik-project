@@ -34,6 +34,7 @@ const Favourite = () => {
   return (
     <div className="App">
       <Navbar />
+      <h2 className="h2">Избранное </h2>
       {
         <div className="Card">
           <div className="container1">
