@@ -52,7 +52,7 @@ const Favourite = () => {
                   </div>
                 </Link>
                 <button onClick={() => decreament(index)} className="btn1">
-                  <i class="fa-solid fa-cart-shopping"></i>delete
+                  <i class="fa-solid fa-cart-shopping"></i>удалить
                 </button>
                 <button onClick={() => addcard2(item)} className="heart2-btn">
                   <i class="fa-solid fa-heart heart2"></i>

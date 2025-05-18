@@ -77,7 +77,7 @@ const Card = () => {
         </h3>
         {JSON.parse(localStorage.getItem("card"))?.length > 0 ? (
           <button onClick={order} className="btn1">
-            order
+            Заказать
           </button>
         ) : (
           ""
