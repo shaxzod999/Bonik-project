@@ -392,7 +392,7 @@ input[name="r"] {
   width: 125px;
   height: auto;
 }
-.card-content{
+.card-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -742,28 +742,129 @@ footer ul li:nth-child(1) {
   font-size: 19px;
   font-weight: bold;
 }
+
 .card-card-img img {
   width: 100px !important;
   height: auto !important;
 }
+
 .product-page {
   width: 100%;
-  height: auto;
+  margin: 0 auto;
+  height: auto !important;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-top: 100px;
 }
-.product-card{
+
+.product-page-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  max-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.product-card {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.product-card-img{
-  width: 50%;
+
+.product-card-img {
+  width: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card-img img {
+  width: 800px;
+  height: auto;
+}
+
+.product-card-about {
+  width: 50% !important;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 100px;
+}
+
+.product-card-about div p h4{
+  font-size: 18px;
+  font-weight: normal;
+  color: #757575;
+  margin-bottom: 0;
+}
+
+.product-card-about div p{
+  margin-bottom: 0;
+  color: #0f3460;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-card-about div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card-about button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #e94560;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-card-about span {
+  width: 160px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: rgb(255, 230, 234);
+  border: 1px solid rgb(197, 197, 197);
+}
+
+.product-card-about h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.product-card-p h4{
+  font-size: 40px;
+  font-weight: 500;
+}
+.product-card-p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.product-card-button{
+  background-color: #0f3460 !important;
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {

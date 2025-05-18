@@ -5,32 +5,68 @@ import Navbar from "./Nabar";
 
 const Product = () => {
   const { id } = useParams();
+
+  // 🔒 DOIM HOOKLAR KOMPONENTNING ENG YUQORISIDA BO‘LISHI KERAK
   const [product, setProduct] = useState(null);
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    const savedCards = JSON.parse(localStorage.getItem("card")) || [];
+    setCards(savedCards);
+  }, []);
 
   useEffect(() => {
     axios.get("https://bonik-project.onrender.com/products").then((res) => {
-      console.log("ID from URL:", id);
-      console.log("Fetched Data:", res.data);
       const found = res.data.find((item) => String(item.id) === id);
-      console.log("Found item:", found);
       setProduct(found);
     });
   }, [id]);
 
-  if (!product) return <p>Loading...</p>;
+  if (!product) return null; // hooklardan keyin bo'lishi mumkin
+
+  const isInCart = cards.some((cardItem) => cardItem.id === product.id);
+
+  const addToCart = () => {
+    if (!isInCart) {
+      const updatedCards = [...cards, { ...product, count: 1 }];
+      localStorage.setItem("card", JSON.stringify(updatedCards));
+      setCards(updatedCards);
+    }
+  };
 
   return (
     <div className="product-page">
       <Navbar />
-      <div className="product-card">
-        <div className="product-card-img">
-          <img src={product.img} alt={product.title} />
+
+      <div className="product-page-container">
+        <div className="product-card">
+          <div className="product-card-img">
+            <img src={product.img} alt={product.title} />
+          </div>
+          <div className="product-card-about">
+            <h2>{product.title}</h2>
+            <div>
+              <span>{product.description}</span>
+              <p>
+                Price: <h4> ${product.price} </h4>
+              </p>
+            </div>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                addToCart();
+              }}
+              disabled={isInCart}
+              className={isInCart ? "product-card-button" : ""}
+            >
+              <i className="fa-solid fa-cart-shopping"></i>
+              {isInCart ? "добовлено" : "Добавить в корзину"}
+            </button>
+          </div>
         </div>
-        <div className="product-card-about">
-          <h2>{product.title}</h2>
+        <div className="product-card-p">
+          <h4>Описание</h4>
           <p>{product.About}</p>
-          <p>{product.description}</p>
-          <p>Price: ${product.price}</p>
         </div>
       </div>
 
