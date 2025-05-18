@@ -179,7 +179,7 @@ function Navbar() {
                 onClick={handleSearchClick}
                 onChange={(event) => setValue(event.target.value)}
                 type="text"
-                placeholder="Tavarlarni izlash"
+                placeholder="Поиск  "
               />
             </div>
 
@@ -192,7 +192,7 @@ function Navbar() {
                     to={"/card"}
                   >
                     <div className="i1">
-                      <i class="fa-solid fa-cart-shopping"></i>корзина
+                      <i class="fa-solid fa-cart-shopping"></i>В корзину
                     </div>
                     <div
                       className={

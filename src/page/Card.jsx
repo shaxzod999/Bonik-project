@@ -69,7 +69,7 @@ const Card = () => {
       className="container-card"
     >
       <Navbar />
-      <h2 className="h2-1">Корзина</h2>
+      <h2 className="h2-1">В Корзину</h2>
       <div className="card-card1">
         <h3>
           Общая стоимость :{" "}

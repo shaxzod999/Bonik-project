@@ -65,9 +65,9 @@ body {
   top: 0;
 }
 .container11 {
-  max-width: 1500px !important;
+  max-width: 1800px !important;
   height: 100%;
-  margin: 0 auto;
+  margin: 0 auto !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -268,7 +268,7 @@ input[name="r"] {
   padding-left: 12px;
 }
 .i1 {
-  width: 62px;
+  width: 80px;
   height: 42px;
   display: flex;
   align-items: center;
@@ -866,6 +866,9 @@ footer ul li:nth-child(1) {
 .product-card-button {
   background-color: #0f3460 !important;
 }
+.mobileMenuOpen{
+  display: none;
+}
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
   .product-page {
@@ -1089,7 +1092,7 @@ footer ul li:nth-child(1) {
   }
 
   .product-card-about {
-    width: 50% ;
+    width: 50%;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -1465,7 +1468,7 @@ footer ul li:nth-child(1) {
     padding-left: 12px;
   }
   .i1 {
-    width: 62px;
+    width: 80px;
     height: 42px;
     display: flex;
     align-items: center;
