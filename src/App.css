@@ -697,6 +697,19 @@ footer ul li:nth-child(1) {
   color: #fff;
 }
 
+@media screen and (min-width: 0px) and (max-width: 456px) {
+  .Card .map {
+    width: 190px !important;
+    height: 330px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+  }
+}
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .container5555 .h4 {
     font-size: 25px;
