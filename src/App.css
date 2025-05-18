@@ -392,10 +392,16 @@ input[name="r"] {
   width: 125px;
   height: auto;
 }
+.card-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .btn1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 10px 10px;
+  padding: 8px 8px;
   background-color: #fff;
   color: rgb(34, 34, 34);
   display: flex;
@@ -407,7 +413,7 @@ input[name="r"] {
   font-size: 17px;
 }
 .btn1:hover {
-  padding: 10px 10px;
+  padding: 8px 8px;
   border-radius: 5px;
   background-color: rgb(34, 34, 34);
   border: none;
@@ -689,15 +695,97 @@ footer ul li:nth-child(1) {
   font-size: 20px;
   color: #fff;
 }
-.container5555 .h4-1 span{
+.container5555 .h4-1 span {
   font-size: 24px;
   color: #0f3460;
 }
-.container5555 p{
+.container5555 p {
   color: #fff;
 }
+.container-card {
+  width: 100% !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.card-card {
+  width: 100% !important;
+  height: 150px;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  gap: 70px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+.card-card1 {
+  width: 100% !important;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+}
 
-@media screen and (min-width: 0px) and (max-width: 456px) {
+.card-card1 h3 {
+  font-size: 25px;
+}
+
+.card-card .td {
+  font-size: 19px;
+  font-weight: bold;
+}
+.card-card-img img {
+  width: 100px !important;
+  height: auto !important;
+}
+.product-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.product-card{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-card-img{
+  width: 50%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+  .card-card1 {
+    width: 100% !important;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.05);
+  }
+  .card-card1 h3 {
+    font-size: 15px;
+  }
+  .card-card {
+    width: 100% !important;
+  }
+  .section2-card {
+    width: 190px !important;
+  }
   .Card .map {
     width: 190px !important;
     height: 330px;
@@ -709,8 +797,51 @@ footer ul li:nth-child(1) {
     cursor: pointer;
     position: relative;
   }
+  .card-card .td {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .card-card-img img {
+    width: 80px !important;
+    height: auto;
+  }
+  .card-card {
+    width: 100% !important;
+    height: 120px !important;
+    padding: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    gap: 20px !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  }
+  .card-card1 .btn1 {
+    margin-bottom: 0rem;
+    font-size: 15px !important;
+  }
 }
 @media screen and (min-width: 0px) and (max-width: 768px) {
+  .card-card {
+    width: 100% !important;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    gap: 70px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  }
+  .container-card {
+    width: 100% !important;
+    padding-top: 0px !important;
+  }
+  .h2-1 {
+    margin-top: 100px;
+  }
   .container5555 .h4 {
     font-size: 25px;
   }
@@ -721,11 +852,11 @@ footer ul li:nth-child(1) {
     font-size: 20px;
     color: #fff;
   }
-  .container5555 .h4-1 span{
+  .container5555 .h4-1 span {
     font-size: 24px;
     color: #0f3460;
   }
-  .container5555 p{
+  .container5555 p {
     color: #fff;
   }
   .container5555 {
@@ -1397,7 +1528,6 @@ footer ul li:nth-child(1) {
   }
 }
 
-/* Mobil holatda menyuni yashir */
 .container11 {
   display: flex;
   flex-wrap: nowrap !important;

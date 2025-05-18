@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Nabar";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Monitors() {
   const token = localStorage.getItem("token");
@@ -53,62 +54,53 @@ function Monitors() {
         <div className="container1">
           {filteredUsers.map((item, index) => (
             <div key={index} className="map">
-              <div className="img">
-                <img src={item.img} alt="" />
-              </div>
-              <p>{item.title}</p>
-              <span>{item.description}</span>
-              <p className="cost">${item.price}</p>
-              {localStorage.getItem("token") || token === "admin" ? (
-                <button
-                  onClick={() => addcard(item)}
-                  disabled={
-                    cards.some((cardItem) => cardItem.id == item.id)
-                      ? true
-                      : false
+              <Link to={`/product/${item.id}`}>
+                <div className="card-content">
+                  <div className="img">
+                    <img src={item.img} alt="" />
+                  </div>
+                  <p>{item.title}</p>
+                  <span>{item.description}</span>
+                  <p className="cost">${item.price}</p>
+                </div>
+              </Link>
+
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  addcard(item);
+                }}
+                disabled={cards.some((cardItem) => cardItem.id === item.id)}
+                className={
+                  cards.some((cardItem) => cardItem.id === item.id)
+                    ? "btn2"
+                    : "btn1"
+                }
+              >
+                <i className="fa-solid fa-cart-shopping"></i>
+                {cards.some((cardItem) => cardItem.id === item.id)
+                  ? "добовлено"
+                  : "в карзину"}
+              </button>
+
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  addcard2(item);
+                }}
+                disabled={cards2.some((cardItem2) => cardItem2.id === item.id)}
+                className="heart2-btn"
+              >
+                <i
+                  className={
+                    cards2.some((cardItem2) => cardItem2.id === item.id)
+                      ? "fa-solid fa-heart heart2"
+                      : "fa-regular fa-heart heart2"
                   }
-                  className={`${
-                    cards.some((cardItem) => cardItem.id == item.id)
-                      ? "btn2"
-                      : "btn1"
-                  }`}
-                >
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  {`${
-                    cards.some((cardItem) => cardItem.id == item.id)
-                      ? "добовлено"
-                      : "в карзину"
-                  }`}
-                </button>
-              ) : (
-                ""
-              )}
-              {localStorage.getItem("token") || token === "admin" ? (
-                <button
-                  onClick={() => addcard2(item)}
-                  disabled={
-                    cards2.some((cardItem2) => cardItem2.id == item.id)
-                      ? true
-                      : false
-                  }
-                  className={`${
-                    cards2.some((cardItem2) => cardItem2.id == item.id)
-                      ? "heart2-btn"
-                      : "heart2-btn"
-                  }`}
-                >
-                  <i
-                    class={`${
-                      cards2.some((cardItem2) => cardItem2.id == item.id)
-                        ? "fa-solid fa-heart heart2"
-                        : "fa-regular fa-heart heart2"
-                    }`}
-                  ></i>
-                </button>
-              ) : (
-                ""
-              )}
-              {/* "fa-regular fa-heart heart2" */}
+                ></i>
+              </button>
             </div>
           ))}
         </div>

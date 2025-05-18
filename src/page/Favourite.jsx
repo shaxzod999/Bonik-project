@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "./Nabar";
+import { Link } from "react-router-dom";
 
 const Favourite = () => {
   const cardItem2 = JSON.parse(localStorage.getItem("card2"));
@@ -40,12 +41,16 @@ const Favourite = () => {
           <div className="container1">
             {card2.map((item, index) => (
               <div className="map">
-                <div className="img">
-                  <img src={item.img} alt="" />
-                </div>
-                <p>{item.title}</p>
-                <span>{item.description}</span>
-                <p className="cost">{item.price}</p>
+                <Link to={`/product/${item.id}`}>
+                  <div className="card-content">
+                    <div className="img">
+                      <img src={item.img} alt="" />
+                    </div>
+                    <p>{item.title}</p>
+                    <span>{item.description}</span>
+                    <p className="cost">${item.price}</p>
+                  </div>
+                </Link>
                 <button onClick={() => decreament(index)} className="btn1">
                   <i class="fa-solid fa-cart-shopping"></i>delete
                 </button>

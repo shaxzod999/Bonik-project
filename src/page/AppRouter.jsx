@@ -16,6 +16,7 @@ import Processors from "./Processors";
 import VideoCards from "./VideoCards";
 import Monitors from "./Monitors";
 import ScrollToTop from "./ScrollToTop";
+import Product from "./Product";
 
 function AppRouter() {
   return (
@@ -28,6 +29,7 @@ function AppRouter() {
         <Route path="/login" element={<Login />} />
         <Route path="/card" element={<Card />} />
         <Route path="/favourite" element={<Favourite />} />
+        <Route path="/product/:id" element={<Product />} />
 
         <Route path="/laptops" element={<Laptops />} />
         <Route path="/mice" element={<Mice />} />

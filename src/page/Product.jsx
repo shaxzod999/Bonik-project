@@ -1,112 +1,40 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "./Nabar";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import Navbar from "./Nabar";
 
-function Keyboards() {
-  const token = localStorage.getItem("token");
-
-  const [cards, setCards] = useState(
-    JSON.parse(localStorage.getItem("card")) || []
-  );
-  const [cards2, setCards2] = useState([]);
-  const [notification, setNotification] = useState(false);
-
-  const logout = () => {
-    localStorage.removeItem("token");
-    window.location.reload();
-  };
-
-  const [users, setUsers] = useState([]);
+const Product = () => {
+  const { id } = useParams();
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    axios.get("https://bonik-project.onrender.com/keyboards").then((res) => {
-      setUsers(res.data);
+    axios.get("https://bonik-project.onrender.com/products").then((res) => {
+      console.log("ID from URL:", id);
+      console.log("Fetched Data:", res.data);
+      const found = res.data.find((item) => String(item.id) === id);
+      console.log("Found item:", found);
+      setProduct(found);
     });
-  }, []);
+  }, [id]);
 
-  const addcard = (item) => {
-    const upgradeData = [...cards, { ...item, count: 1 }];
-    console.log(upgradeData);
-    localStorage.setItem("card", JSON.stringify(upgradeData));
-    setCards(upgradeData);
-  };
-
-  const addcard2 = (item2) => {
-    const upgradeData2 = [...cards2, { ...item2, count: 1 }];
-    console.log(upgradeData2);
-    localStorage.setItem("card2", JSON.stringify(upgradeData2));
-    setCards2(upgradeData2);
-  };
-
-  const [value, setValue] = useState("");
-
-  const filteredUsers = users.filter((country) =>
-    country.title.toLowerCase().includes(value.toLowerCase())
-  );
+  if (!product) return <p>Loading...</p>;
 
   return (
-    <div>
+    <div className="product-page">
       <Navbar />
-      <h2 className="h2">Клавиатуры</h2>
-
-      <div className="Card">
-        <div className="container1">
-          {filteredUsers.map((item, index) => (
-            <div key={index} className="map">
-              <Link to={`/product/${item.id}`}>
-                <div className="card-content">
-                  <div className="img">
-                    <img src={item.img} alt="" />
-                  </div>
-                  <p>{item.title}</p>
-                  <span>{item.description}</span>
-                  <p className="cost">${item.price}</p>
-                </div>
-              </Link>
-
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  addcard(item);
-                }}
-                disabled={cards.some((cardItem) => cardItem.id === item.id)}
-                className={
-                  cards.some((cardItem) => cardItem.id === item.id)
-                    ? "btn2"
-                    : "btn1"
-                }
-              >
-                <i className="fa-solid fa-cart-shopping"></i>
-                {cards.some((cardItem) => cardItem.id === item.id)
-                  ? "добовлено"
-                  : "в карзину"}
-              </button>
-
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  addcard2(item);
-                }}
-                disabled={cards2.some((cardItem2) => cardItem2.id === item.id)}
-                className="heart2-btn"
-              >
-                <i
-                  className={
-                    cards2.some((cardItem2) => cardItem2.id === item.id)
-                      ? "fa-solid fa-heart heart2"
-                      : "fa-regular fa-heart heart2"
-                  }
-                ></i>
-              </button>
-            </div>
-          ))}
+      <div className="product-card">
+        <div className="product-card-img">
+          <img src={product.img} alt={product.title} />
+        </div>
+        <div className="product-card-about">
+          <h2>{product.title}</h2>
+          <p>{product.About}</p>
+          <p>{product.description}</p>
+          <p>Price: ${product.price}</p>
         </div>
       </div>
 
-      <footer className="footer" style={{ marginTop: "30px" }}>
+      <footer className="footer">
         <div className="container-footer">
           <ul>
             <li>
@@ -310,6 +238,6 @@ function Keyboards() {
       </footer>
     </div>
   );
-}
+};
 
-export default Keyboards;
+export default Product;

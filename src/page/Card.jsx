@@ -66,27 +66,14 @@ const Card = () => {
 
   return (
     <div
-      className="container"
-      style={{
-        marginBottom: "300px",
-      }}
+      className="container-card"
     >
       <Navbar />
       <h2 className="h2-1">Корзина</h2>
-      <div
-        style={{
-          width: "100%",
-          height: "100px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "30px",
-          borderRadius: "25px",
-          boxShadow: "0 12px 40px rgba(0,0,0,0.05)",
-        }}
-      >
+      <div className="card-card1">
         <h3>
-        Общая стоимость : {totalPrices?.reduce((acc, price) => acc + price, 0)} $
+          Общая стоимость :{" "}
+          {totalPrices?.reduce((acc, price) => acc + price, 0)} $
         </h3>
         {JSON.parse(localStorage.getItem("card"))?.length > 0 ? (
           <button onClick={order} className="btn1">
@@ -123,22 +110,9 @@ const Card = () => {
           >
             <div style={{ width: "100%", height: "100px" }}>
               {card?.map((item, index) => (
-                <div
-                  style={{
-                    height: "150px",
-                    padding: "50px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-around",
-                    marginBottom: "30px",
-                    borderRadius: "25px",
-                    gap: "70px",
-                    boxShadow: "0 12px 40px rgba(0,0,0,0.10)",
-                  }}
-                >
-                  <div className="img">
+                <div className="card-card">
+                  <div className="card-card-img">
                     <img
-                      style={{ width: "100px", height: "auto" }}
                       src={item.img}
                       alt=""
                     />
@@ -150,7 +124,7 @@ const Card = () => {
                       gap: "10px",
                     }}
                   >
-                    <td style={{ fontSize: "19px", fontWeight: "bold" }}>
+                    <td className="td">
                       {item.title}
                     </td>
                     <td style={{ color: "rgb(233, 69, 96)" }}>
