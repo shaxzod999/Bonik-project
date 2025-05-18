@@ -221,6 +221,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-r/wc1000/7323209847.jpg",
       "title": "ZTE Nubia RedMagic10",
       "description": "от $93.4 12/мес",
+      "About": "ZTE Nubia RedMagic10 — это игровой смартфон нового поколения, разработанный специально для геймеров. Он оснащён высокопроизводительным процессором, системой активного охлаждения и экраном с высокой частотой обновления, что обеспечивает плавный и быстрый игровой процесс. Дизайн устройства подчеркивает его мощный характер, а аккумулятор большой ёмкости с поддержкой быстрой зарядки гарантирует долгие часы автономной игры. Это идеальный выбор для тех, кто хочет быть на шаг впереди в мобильных играх.",
       "price": 1121
     },
     {
@@ -228,6 +229,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-e/wc1000/7218842990.jpg",
       "title": "Redmagic 10 Pro",
       "description": "от $67.3 12/мес",
+      "About": "Redmagic 10 Pro — мощный игровой смартфон с премиальными характеристиками, созданный для максимальной производительности. Устройство оснащено передовым процессором, усовершенствованной системой охлаждения и дисплеем с высокой частотой обновления, что делает его идеальным для мобильного гейминга. Продуманный дизайн, RGB-подсветка и эргономичная форма корпуса делают его не только функциональным, но и визуально привлекательным. Поддержка быстрой зарядки и ёмкий аккумулятор позволяют использовать смартфон активно в течение всего дня.",
       "price": 808
     },
     {
@@ -235,6 +237,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-p/wc1000/7111388977.jpg",
       "title": "Marshall Major IV",
       "description": "от $6.6 12/мес",
+      "About": "Marshall Major IV — это стильные и мощные наушники с фирменным звуком Marshall. Они обеспечивают до 80 часов автономной работы и поддерживают быструю зарядку. Эргономичный дизайн и мягкие амбушюры гарантируют комфорт даже при длительном использовании. Отличный выбор для ценителей качественного звука и культового дизайна.",
       "price": 79
     },
     {
@@ -242,6 +245,7 @@
       "img": "https://files.ox-sys.com/cache/800x_/image/54/e4/6c/54e46c18186e728f175cbd387a91cba2eea872fbc7594e41421e085a05330644.jpg",
       "title": "Audio-Technica ATH-G1",
       "description": "от $12.4 12/мес",
+      "About": "Audio-Technica ATH-G1 — профессиональная игровая гарнитура с высококачественным звуком и чувствительным микрофоном. Подходит как для киберспорта, так и для повседневных игр. Лёгкая конструкция и удобная посадка позволяют использовать её часами без усталости.",
       "price": 149
     },
     {
@@ -249,6 +253,7 @@
       "img": "https://files.ox-sys.com/cache/800x_/image/d7/ae/5c/d7ae5c8fffb38aef4d58a7dd99a72ad0937f72991cf6c69072fdb8bc0798e374.jpg",
       "title": "Logitech G733",
       "description": "от $13.4 12/мес",
+      "About": "Logitech G733 — это беспроводная игровая гарнитура с настраиваемой RGB-подсветкой и уникальным дизайном. Оснащена технологией DTS Headphone:X 2.0, обеспечивающей объёмный звук. Подходит для тех, кто хочет совместить стиль и высокое качество звучания.",
       "price": 161
     },
     {
@@ -256,6 +261,7 @@
       "img": "https://files.ox-sys.com/cache/800x_/image/70/2a/c0/702ac0dc0041afed2aee0b5fb8e654a4d4dd55030f1019aac36d909f6c644135.jpg",
       "title": "Audio-Technica",
       "description": "от $16.3 12/мес",
+      "About": "Наушники Audio-Technica сочетают в себе японское качество и превосходный звук. Идеальны для прослушивания музыки, студийной работы и повседневного использования. Отличаются прочной конструкцией и чистым, сбалансированным звучанием.",
       "price": 195
     },
     {
@@ -263,6 +269,7 @@
       "img": "https://files.ox-sys.com/cache/800x_/image/5d/17/c3/5d17c3ad427ec3d2d24e266e487ac5ac08c58e7e0bd82aeba1165a306842c8e7.jpg",
       "title": "Edifier G2BT",
       "description": "от $2.83 12/мес",
+      "About": "Edifier G2BT — доступные и качественные наушники для игр и мультимедиа. Поддерживают Bluetooth-соединение, обладают хорошей шумоизоляцией и комфортной посадкой. Прекрасный выбор для тех, кто ищет надёжные наушники по доступной цене.",
       "price": 34
     },
     {
@@ -270,6 +277,7 @@
       "img": "https://files.ox-sys.com/cache/800x_/image/ee/99/82/ee9982b328a69877e68a08f12c8c5fcbd949b62292050a7828049f8a88f5f8a8.jpg",
       "title": "Rampage RM-K9",
       "description": "от $4.16 12/мес",
+      "About": "Rampage RM-K9 — универсальная гарнитура для игр и общения. Оснащена чувствительным микрофоном, регулируемой дужкой и мягкими амбушюрами. Отличается ярким дизайном и удобством при длительном использовании.",
       "price": 50
     },
     {
@@ -277,13 +285,16 @@
       "img": "https://files.ox-sys.com/cache/800x_/image/05/06/e8/0506e83e28f351873d6174979fbc1d0d688b8d8f3ec2864ec68cc98b3684ba14.jpg",
       "title": "SteelSeries Arctis Nova",
       "description": "от $10 12/мес",
+      "About": "SteelSeries Arctis Nova — гарнитура премиум-класса для требовательных геймеров. Обеспечивает кристально чистый звук, глубокие басы и пространственное звучание. Модель отличается прочностью, эргономикой и высоким уровнем комфорта. Идеально подходит для киберспорта и стриминга.",
       "price": 120
     },
+
     {
       "id": "77",
       "img": "https://ir.ozone.ru/s3/multimedia-7/wc1000/6651823975.jpg",
       "title": "BOMGE MS-808",
       "description": "от $5 12/мес",
+      "About": "BOMGE MS-808 — это профессиональный конденсаторный микрофон, предназначенный для записи, стриминга и подкастов. Обеспечивает чистое и детализированное звучание благодаря высокой чувствительности и низкому уровню шума. Подключается по USB, что делает его удобным в использовании.",
       "price": 60
     },
     {
@@ -291,6 +302,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-n/wc1000/6730897451.jpg",
       "title": "MAONO PD200X",
       "description": "от $4.3 12/мес",
+      "About": "MAONO PD200X — универсальный микрофон с поддержкой USB и XLR подключения. Оснащён встроенным поп-фильтром, RGB-подсветкой и удобным управлением на корпусе. Идеален для стриминга, подкастов и записи голоса в домашних условиях.",
       "price": 52
     },
     {
@@ -298,6 +310,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-2/wc1000/7167794618.jpg",
       "title": "Comica EJoy Uni Pro",
       "description": "от $6.2 12/мес",
+      "About": "Comica EJoy Uni Pro — это всенаправленный USB-микрофон, разработанный для записи голоса, онлайн-общения и видеоконференций. Обеспечивает стабильное и чёткое звучание. Имеет металлический корпус и простой интерфейс подключения.",
       "price": 74
     },
     {
@@ -305,6 +318,7 @@
       "img": "data:image/jpeg;base64,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",
       "title": "HyperX QuadCast",
       "description": "от $11 12/мес",
+      "About": "HyperX QuadCast — это высококачественный USB-микрофон для стримеров, подкастеров и создателей контента. Имеет четыре полярных направленности, встроенное антивибрационное крепление, поп-фильтр и сенсорную кнопку выключения звука.",
       "price": 132
     },
     {
@@ -312,6 +326,7 @@
       "img": "https://pcmarket.uz/wp-content/uploads/2022/09/hx-product-duocast-3-zm-lg-removebg-preview-500x500.png",
       "title": "HyperX DuoCast",
       "description": "от $10.3 12/мес",
+      "About": "HyperX DuoCast — это компактный и стильный микрофон с USB-подключением. Поддерживает два режима записи: кардиоидный и всенаправленный. Отлично подходит для онлайн-трансляций, подкастов и видеозвонков.",
       "price": 124
     },
     {
@@ -319,6 +334,7 @@
       "img": "https://pcmarket.uz/wp-content/uploads/2022/09/1Un7Fyleww9DKp7FlpCd-removebg-preview-500x500.png",
       "title": "HyperX QuadCast S",
       "description": "от $14.3 12/мес",
+      "About": "HyperX QuadCast S — улучшенная версия QuadCast с RGB-подсветкой. Оснащён четырьмя режимами направленности, встроенным поп-фильтром и антивибрационной системой. Идеален для профессионального стриминга и записи.",
       "price": 171
     },
     {
@@ -326,6 +342,7 @@
       "img": "https://pcmarket.uz/wp-content/uploads/2022/12/699Z0AA-1_T1666059126-500x500.png",
       "title": "HyperX ProCast — XLR",
       "description": "от $16.4 12/мес",
+      "About": "HyperX ProCast — это профессиональный XLR-микрофон студийного уровня. Имеет большую диафрагму и кардиоидную направленность для точной записи голоса. Отлично подходит для радиовещания, записи вокала и подкастов.",
       "price": 197
     },
     {
@@ -333,6 +350,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1/wc1000/6642589141.jpg",
       "title": "MAONO PD200X",
       "description": "от $4.3 12/мес",
+      "About": "MAONO PD200X — это гибридный микрофон с подключением через USB и XLR. Он предлагает отличное качество звука, RGB-подсветку и простое управление. Подходит как для новичков, так и для профессионалов.",
       "price": 52
     },
     {
@@ -340,13 +358,16 @@
       "img": "https://dl.bs365.uz/storage/products/23884/d2g1tY4YVUT6ItsMuqkm-home_default.jpg",
       "title": "Defender Forte GMC 300",
       "description": "от $2.3 12/мес",
+      "About": "Defender Forte GMC 300 — бюджетный настольный микрофон, идеально подходящий для общения в Skype, Zoom и онлайн-играх. Прост в использовании, компактен и обеспечивает достойное качество звука для повседневных задач.",
       "price": 27
     },
+
     {
       "id": "69",
       "img": "https://dl.bs365.uz/storage/products/23166/76b9XrXBkhDzeUoWVeTE-large_default.jpg",
       "title": "Intel Core i9",
       "description": "от $58.3 12/мес",
+      "About": "Intel Core i9 — это мощный процессор высокого класса, предназначенный для требовательных задач: гейминга, рендеринга, работы с видео и многозадачности. Обеспечивает высокую тактовую частоту, множество ядер и потоков для максимальной производительности.",
       "price": 700
     },
     {
@@ -354,6 +375,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-f/wc1000/7171837539.jpg",
       "title": "AMD Ryzen 9 9950X",
       "description": "от $62 12/мес",
+      "About": "AMD Ryzen 9 9950X — флагманский процессор от AMD с архитектурой Zen 5. Оснащён большим количеством ядер и потоков, поддерживает PCIe 5.0 и DDR5. Идеален для профессионального использования и высокопроизводительных игровых систем.",
       "price": 743
     },
     {
@@ -361,6 +383,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-n/wc1000/6994415399.jpg",
       "title": "AMD Ryzen 5 5600G",
       "description": "от $22.8 12/мес",
+      "About": "AMD Ryzen 5 5600G — универсальный процессор с встроенной графикой Vega, подходящий для домашних ПК без необходимости дискретной видеокарты. Идеален для повседневных задач, лёгкого гейминга и работы.",
       "price": 273
     },
     {
@@ -368,6 +391,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-t/wc1000/6321517973.jpg",
       "title": "AMD Ryzen 7 5800X",
       "description": "от $ 12/мес",
+      "About": "AMD Ryzen 7 5800X — это 8-ядерный процессор с архитектурой Zen 3, обеспечивающий отличную производительность для игр и рабочих приложений. Отличается высокой тактовой частотой и энергоэффективностью.",
       "price": 373
     },
     {
@@ -375,6 +399,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-a/wc1000/6949010530.jpg",
       "title": "Intel Core i7-14700K",
       "description": "от $30 12/мес",
+      "About": "Intel Core i7-14700K — высокопроизводительный процессор с гибридной архитектурой, включающей производительные и эффективные ядра. Идеален для геймеров и создателей контента, поддерживает разгон и новейшие технологии.",
       "price": 360
     },
     {
@@ -382,6 +407,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-9/wc1000/7267589217.jpg",
       "title": "Intel Core i5-12400F",
       "description": "от $30 12/мес",
+      "About": "Intel Core i5-12400F — это процессор среднего класса, отличающийся отличным соотношением цены и производительности. Подходит для игр, офисных задач и повседневного использования. Не имеет встроенной графики.",
       "price": 360
     },
     {
@@ -389,6 +415,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-j/wc1000/7080457591.jpg",
       "title": "Intel Xeon E-2286M",
       "description": "от $50.3 12/мес",
+      "About": "Intel Xeon E-2286M — серверный и рабочий процессор, ориентированный на профессиональные приложения, CAD/3D рендеринг и научные вычисления. Поддерживает ECC-память и обеспечивает стабильную работу под нагрузкой.",
       "price": 604
     },
     {
@@ -396,13 +423,37 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-e/wc1000/7534869278.jpg",
       "title": "Intel Core Ultra 5 245KF",
       "description": "от $42 12/мес",
+      "About": "Intel Core Ultra 5 245KF — новейший процессор с гибридной архитектурой и производительными ядрами. Предназначен для мощных настольных ПК, поддерживает DDR5 и PCIe 5.0, идеально подходит для современных игр и многозадачности.",
       "price": 503
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     {
       "id": "60",
       "img": "https://files.ox-sys.com/cache/800x_/image/11/e6/c6/11e6c6db41a6388f84037a821c6342c6cd0d29edc7782a63ab9f09ef47907bac.jpg",
       "title": "Gigabyte RTX 4070",
       "description": "от $52.5 12/мес",
+      "About": "Gigabyte RTX 4070 — мощная видеокарта с архитектурой NVIDIA Ada Lovelace. Отличается отличной производительностью в 2K и 4K играх, поддержкой трассировки лучей и DLSS 3, подходит для геймеров и создателей контента.",
       "price": 630
     },
     {
@@ -410,6 +461,7 @@
       "img": "https://files.ox-sys.com/cache/800x_/image/d9/51/db/d951dbba9edb255b73f40791bb028f868284a22158cf831b66ef6edf280e896c.jpg",
       "title": "AORUS RTX™ 5080",
       "description": "от $150 12/мес",
+      "About": "AORUS RTX 5080 — флагманская видеокарта нового поколения, созданная для ультимативного гейминга и 3D-графики. Обеспечивает высочайшую производительность, улучшенную энергоэффективность и продвинутые технологии охлаждения.",
       "price": 1801
     },
     {
@@ -417,6 +469,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-x/wc1000/6740013885.jpg",
       "title": "KFA2 RTX 4090",
       "description": "от $1496.4 12/мес",
+      "About": "KFA2 RTX 4090 — одна из самых мощных видеокарт на рынке. Оснащена 24 ГБ памяти GDDR6X, поддерживает трассировку лучей и DLSS 3. Идеально подходит для 4K-гейминга и профессионального рендеринга.",
       "price": 17957
     },
     {
@@ -424,6 +477,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-r/wc1000/6740012835.jpg",
       "title": "MSI GeForce RTX 4090",
       "description": "от $1259.3 12/мес",
+      "About": "MSI GeForce RTX 4090 — топовая видеокарта с выдающейся производительностью и надежной системой охлаждения. Поддерживает новейшие игровые технологии, обеспечивает плавную работу даже в самых требовательных проектах.",
       "price": 15111
     },
     {
@@ -431,6 +485,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-g/wc1000/7349591032.jpg",
       "title": "Gigabyte GeForce",
       "description": "от $69 12/мес",
+      "About": "Gigabyte GeForce — универсальная видеокарта для повседневных задач, легкого гейминга и мультимедийного контента. Обеспечивает хорошую производительность по доступной цене.",
       "price": 828
     },
     {
@@ -438,6 +493,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-z/wc1000/7435760651.jpg",
       "title": "Gigabyte GeForce",
       "description": "от $76.8 12/мес",
+      "About": "Gigabyte GeForce — надежное решение для игровых ПК среднего уровня. Имеет оптимальное соотношение цена-производительность и оснащена эффективным охлаждением.",
       "price": 922
     },
     {
@@ -445,6 +501,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-y/wc1000/7457375266.jpg",
       "title": "MAXSUN GeForce",
       "description": "от $28.4 12/мес",
+      "About": "MAXSUN GeForce — бюджетная видеокарта, подходящая для офисной работы, учебы и нетребовательных игр. Обеспечивает стабильную работу при низком энергопотреблении.",
       "price": 341
     },
     {
@@ -452,6 +509,7 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-x/wc1000/7055444229.jpg",
       "title": "ASRock Radeon",
       "description": "от $36 12/мес",
+      "About": "ASRock Radeon — видеокарта на базе графического процессора AMD, предназначенная для стабильной работы и базового гейминга. Поддерживает современные графические API и технологии AMD.",
       "price": 432
     },
     {
@@ -459,13 +517,29 @@
       "img": "https://ir.ozone.ru/s3/multimedia-a/wc1000/6167448286.jpg",
       "title": "Gigabyte Radeon",
       "description": "от $32 12/мес",
+      "About": "Gigabyte Radeon — сбалансированная видеокарта для повседневного использования, мультимедиа и игр в разрешении Full HD. Обеспечивает хорошую производительность и долговечность.",
       "price": 384
-    },
+    },    
+
+
+
+
+
+
+
+
+
+
+
+
+    
     {
       "id": "50",
       "img": "data:image/jpeg;base64,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j5pnZHctqUrSNKxpH4VmZn1lwmLTEzWholIa0AAWbkBuHsqn5WmxY9rwrFt7N3G1x7PQF3f0cj5pnZHcno5HzTOyO5WQ4S/TU5BBluDv4LfCrmhtJsgY9jmF2ItIIda1hZdx9HI+aZ2R3L6bq1Gfo2dkdyDiektMRzR4Nm4Zg+0OJZZ1jivcRO7QXYTqzGPo4+yO5fXoyz6jOyO5BxGl0xEx8rtm47QtPtDK17/imlNMxzRGMMcCeMke5dtGrTPqMy/ujuR2rTPqM7I7kHIvJUANK0vvm/gSr0Wtb0NodsUrXtY1pzFwAMiDlktkQEREBUwhVRBTCmEKqIKYUwhVRBTCllVEFLJZVRBSyWVUQUsllVEFLJZVRBSyYVVEFMITCFVEFMKYQqogphCYQqogphCYQqogoGhVREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERB//2Q==",
       "title": "AJAZZ AK820",
       "description": "от $8.4 12/мес",
+      "About":"",
+
       "price": 101
     },
     {
@@ -473,6 +547,8 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-t/wc1000/7326715241.jpg",
       "title": "ASUS 90MP01W0",
       "description": "от $24.8 12/мес",
+      "About":"",
+
       "price": 297
     },
     {
@@ -480,6 +556,8 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-6/wc1000/7472585778.jpg",
       "title": "Tartarus V2 Chroma",
       "description": "от $6.3 12/мес",
+      "About":"",
+
       "price": 76
     },
     {
@@ -487,12 +565,16 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-b/wc1000/7195647719.jpg",
       "title": "Rapoo E9310M",
       "description": "от $4 12/мес",
+      "About":"",
+
       "price": 48
     },
     {
       "id": "54",
       "img": "https://ir.ozone.ru/s3/multimedia-1-i/wc1000/7192749642.jpg",
       "title": "G PRO X TKL lightspeed",
+      "About":"",
+
       "description": "от $15 12/мес",
       "price": 180
     },
@@ -501,12 +583,16 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-9/wc1000/7497223497.jpg",
       "title": "ZORNHER ZH870",
       "description": "от $8.8 12/мес",
+      "About":"",
+
       "price": 106
     },
     {
       "id": "56",
       "img": "https://ir.ozone.ru/s3/multimedia-1-d/wc1000/7021571197.jpg",
       "title": "ASUS M701 ROG",
+      "About":"",
+
       "description": "от $16.5 12/мес",
       "price": 198
     },
@@ -515,6 +601,8 @@
       "img": "https://ir.ozone.ru/s3/multimedia-3/wc1000/6865033935.jpg",
       "title": "NuPhy AIR 75",
       "description": "от $34.8 12/мес",
+      "About":"",
+
       "price": 417
     },
     {
@@ -522,6 +610,8 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-e/wc1000/7375767098.jpg",
       "title": "Varmilo",
       "description": "от $20.8 12/мес",
+      "About":"",
+
       "price": 250
     },
     {
@@ -529,8 +619,21 @@
       "img": "https://ir.ozone.ru/s3/multimedia-1-b/wc1000/7443819479.jpg",
       "title": "MelGeek",
       "description": "от $22.5 12/мес",
+      "About":"",
+
       "price": 270
     },
+
+
+
+
+
+
+
+
+
+
+
     {
       "id": "40",
       "img": "https://openshop.uz/storage/uploads/products/photos/202505/GjZ4LZC2ORLeAZ6gf1BzmoIEeTeOxjcPo1AbccfA.jpg",
