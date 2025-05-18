@@ -61,8 +61,9 @@ function Navbar() {
 
   const [value, setValue] = useState("");
 
-  const filteredUsers = users.filter((country) =>
-    country.title.toLowerCase().includes(value.toLowerCase())
+  const filteredUsers = users.filter(
+    (country) =>
+      country.title && country.title.toLowerCase().includes(value.toLowerCase())
   );
 
   const [searchVisible, setSearchVisible] = useState(true);
