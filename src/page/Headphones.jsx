@@ -106,7 +106,7 @@ function Headphones() {
         </div>
       </div>
 
-      <footer className="footer" style={{marginTop:"30px"}}>
+      <footer className="footer" style={{ marginTop: "30px" }}>
         <div className="container-footer">
           <ul>
             <li>
@@ -128,7 +128,8 @@ function Headphones() {
             </div>
           </ul>
           <ul>
-            <li>Contact Us</li>
+            <li>Контакты</li>
+
             <li>
               Расия <br /> Санкт-Петербург
             </li>

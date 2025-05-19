@@ -92,7 +92,9 @@ const Product = () => {
             </div>
           </ul>
           <ul>
-            <li>Contact Us</li>
+          <li>Контакты</li>
+
+
             <li>
               Расия <br /> Санкт-Петербург
             </li>
