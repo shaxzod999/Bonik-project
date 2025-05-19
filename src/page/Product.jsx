@@ -92,14 +92,12 @@ const Product = () => {
             </div>
           </ul>
           <ul>
-          <li>Контакты</li>
-
-
+            <li>Контакты</li>
             <li>
-              Расия <br /> Санкт-Петербург
+              Россия <br /> Москва
             </li>
             <li>Электронная почта: uilib.help@gmail.com</li>
-            <li>Телефон: +1 1123 456 780</li>
+            <li>Телефон: +7 000 000 00 00</li>
             <li></li>
           </ul>
           <ul>
@@ -188,7 +186,7 @@ const Product = () => {
             </a>
           </ul>
           <ul>
-            <a href="/" target="_blank" rel="noreferrer noopener">
+            <a href="/" rel="noreferrer noopener">
               <div
                 color="white"
                 display="flex"
