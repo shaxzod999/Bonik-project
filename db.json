@@ -850,105 +850,104 @@
       "password": "umarov"
     }
   ],
+
   "laptops": [
-    [
-      {
-        "id": "18",
-        "title": "MacBook Pro M4 Max",
-        "description": "от $286.7 12/мес",
-        "About": "MacBook Pro M4 Max — мощный профессиональный ноутбук от Apple с новейшим чипом M4 Max, подходящий для интенсивной работы с видео, кодом и графикой.",
-        "price": 3441,
-        "img": "https://macbro.uz/cdn/shop/files/4cb1bcfe765cfe6d58b7e1361f0e46485cc01d0ef0eab1dd9e352bc152758058_png_6c6e1e43-cbf6-453a-bf37-8496ab0f5a29_1220x_crop_center.webp?v=1734436954"
-      },
-      {
-        "id": "19",
-        "title": "Macbook Pro M4",
-        "description": "от $133.6 12/мес",
-        "About": "MacBook Pro M4 — производительный ноутбук на базе новейшего чипа Apple M4, отлично подходящий для работы, учебы и креативных задач.",
-        "price": 1592,
-        "img": "https://macbro.uz/cdn/shop/files/bb3ce2c80a9671c7fcc7d1d12b08e50cd5df7cea20acd803d1ce10c24aff10a9_png_1220x_crop_center.webp?v=1744804091"
-      },
-      {
-        "id": "20",
-        "title": "ASUS ROG Zephyrus G16",
-        "description": "от $142.3 12/мес",
-        "About": "ASUS ROG Zephyrus G16 — тонкий и мощный игровой ноутбук с высокочастотным дисплеем и производительной графикой для современных игр и работы.",
-        "price": 1707,
-        "img": "https://nout.uz/wp-content/uploads/2024/11/1-3.png"
-      },
-      {
-        "id": "21",
-        "title": "MacBook Pro M3",
-        "description": "от $118.8 12/мес",
-        "About": "MacBook Pro M3 — обновлённая модель с чипом Apple M3, обеспечивающим высокую скорость и энергоэффективность для любых задач.",
-        "price": 1426,
-        "img": "https://macbro.uz/cdn/shop/files/1spacegray_1220x_crop_center.png?v=1700722540"
-      },
-      {
-        "id": "22",
-        "title": "MacBook Air M4",
-        "description": "от $105.8 12/мес",
-        "About": "MacBook Air M4 — ультралёгкий ноутбук от Apple с новым процессором M4, тихой работой и долгим временем автономной работы.",
-        "price": 1270,
-        "img": "https://macbro.uz/cdn/shop/files/35_2330508f-dd07-4906-bf5a-7c6d4949ea64_1220x_crop_center.png?v=1744803481"
-      },
-      {
-        "id": "23",
-        "title": "Asus TUF Gaming",
-        "description": "от $54.4 12/мес",
-        "About": "Asus TUF Gaming — надёжный и выносливый ноутбук с игровыми возможностями, оптимальный выбор для геймеров и студентов.",
-        "price": 653,
-        "img": "https://nout.uz/wp-content/uploads/2025/03/938uihb-300x300.png"
-      },
-      {
-        "id": "24",
-        "title": "HP Victus",
-        "description": "от $51.8 12/мес",
-        "About": "HP Victus — стильный и производительный ноутбук с отличной системой охлаждения и дисплеем для игр и мультимедиа.",
-        "price": 622,
-        "img": "https://nout.uz/wp-content/uploads/2024/02/52-300x300.png"
-      },
-      {
-        "id": "25",
-        "title": "Asus ROG Strix SCAR 18",
-        "description": "от $376.8 12/мес",
-        "About": "Asus ROG Strix SCAR 18 — премиум-геймерский ноутбук с огромным 18-дюймовым экраном и передовыми компонентами для экстремальных задач.",
-        "price": 4521,
-        "img": "https://nout.uz/wp-content/uploads/2025/03/02_SCAR_New_18_L-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png"
-      },
-      {
-        "id": "26",
-        "title": "Asus Zenbook DUO 14",
-        "description": "от $166.6 12/мес",
-        "About": "Asus Zenbook DUO 14 — инновационный ноутбук с двумя экранами для многозадачности и профессиональной работы с контентом.",
-        "price": 1999,
-        "img": "https://nout.uz/wp-content/uploads/2024/11/270-1.png"
-      },
-      {
-        "id": "27",
-        "title": "Acer Nitro 5",
-        "description": "от $91.7 12/мес",
-        "About": "Acer Nitro 5 — доступный и мощный игровой ноутбук с ярким дизайном и хорошей производительностью для повседневных игр.",
-        "price": 1100,
-        "img": "https://files.glotr.uz/company/000/005/799/products/2021/07/31/2021-07-31-12-13-26-846298-d4269fb7bd4e256de138e5187d3249e8.jpg?_=ozb9y"
-      },
-      {
-        "id": "28",
-        "title": "Acer Nitro 16",
-        "description": "от $145.2 12/мес",
-        "About": "Acer Nitro 16 — обновлённая версия игровой серии с увеличенным экраном и улучшенной графикой, подходящий для современных игр.",
-        "price": 1742,
-        "img": "https://neostar.uz/upload/resize_cache/iblock/068/340_340_140cd750bba9870f18aada2478b24840a/eobhiulsvbrwbcbq4mcujagnlf0h5dfd.webp"
-      },
-      {
-        "id": "29",
-        "title": "Acer Predator Helios",
-        "description": "от $124.4 12/мес",
-        "About": "Acer Predator Helios — флагманский игровой ноутбук с мощной видеокартой и системой охлаждения для требовательных пользователей.",
-        "price": 1493,
-        "img": "https://dl.bs365.uz/storage/products/25620/K4qPZB2nqwjO0PzFDqYD-home_default.jpg"
-      }
-    ]
+    {
+      "id": "18",
+      "title": "MacBook Pro M4 Max",
+      "description": "от $286.7 12/мес",
+      "About": "MacBook Pro M4 Max — мощный профессиональный ноутбук от Apple с новейшим чипом M4 Max, подходящий для интенсивной работы с видео, кодом и графикой.",
+      "price": 3441,
+      "img": "https://macbro.uz/cdn/shop/files/4cb1bcfe765cfe6d58b7e1361f0e46485cc01d0ef0eab1dd9e352bc152758058_png_6c6e1e43-cbf6-453a-bf37-8496ab0f5a29_1220x_crop_center.webp?v=1734436954"
+    },
+    {
+      "id": "19",
+      "title": "Macbook Pro M4",
+      "description": "от $133.6 12/мес",
+      "About": "MacBook Pro M4 — производительный ноутбук на базе новейшего чипа Apple M4, отлично подходящий для работы, учебы и креативных задач.",
+      "price": 1592,
+      "img": "https://macbro.uz/cdn/shop/files/bb3ce2c80a9671c7fcc7d1d12b08e50cd5df7cea20acd803d1ce10c24aff10a9_png_1220x_crop_center.webp?v=1744804091"
+    },
+    {
+      "id": "20",
+      "title": "ASUS ROG Zephyrus G16",
+      "description": "от $142.3 12/мес",
+      "About": "ASUS ROG Zephyrus G16 — тонкий и мощный игровой ноутбук с высокочастотным дисплеем и производительной графикой для современных игр и работы.",
+      "price": 1707,
+      "img": "https://nout.uz/wp-content/uploads/2024/11/1-3.png"
+    },
+    {
+      "id": "21",
+      "title": "MacBook Pro M3",
+      "description": "от $118.8 12/мес",
+      "About": "MacBook Pro M3 — обновлённая модель с чипом Apple M3, обеспечивающим высокую скорость и энергоэффективность для любых задач.",
+      "price": 1426,
+      "img": "https://macbro.uz/cdn/shop/files/1spacegray_1220x_crop_center.png?v=1700722540"
+    },
+    {
+      "id": "22",
+      "title": "MacBook Air M4",
+      "description": "от $105.8 12/мес",
+      "About": "MacBook Air M4 — ультралёгкий ноутбук от Apple с новым процессором M4, тихой работой и долгим временем автономной работы.",
+      "price": 1270,
+      "img": "https://macbro.uz/cdn/shop/files/35_2330508f-dd07-4906-bf5a-7c6d4949ea64_1220x_crop_center.png?v=1744803481"
+    },
+    {
+      "id": "23",
+      "title": "Asus TUF Gaming",
+      "description": "от $54.4 12/мес",
+      "About": "Asus TUF Gaming — надёжный и выносливый ноутбук с игровыми возможностями, оптимальный выбор для геймеров и студентов.",
+      "price": 653,
+      "img": "https://nout.uz/wp-content/uploads/2025/03/938uihb-300x300.png"
+    },
+    {
+      "id": "24",
+      "title": "HP Victus",
+      "description": "от $51.8 12/мес",
+      "About": "HP Victus — стильный и производительный ноутбук с отличной системой охлаждения и дисплеем для игр и мультимедиа.",
+      "price": 622,
+      "img": "https://nout.uz/wp-content/uploads/2024/02/52-300x300.png"
+    },
+    {
+      "id": "25",
+      "title": "Asus ROG Strix SCAR 18",
+      "description": "от $376.8 12/мес",
+      "About": "Asus ROG Strix SCAR 18 — премиум-геймерский ноутбук с огромным 18-дюймовым экраном и передовыми компонентами для экстремальных задач.",
+      "price": 4521,
+      "img": "https://nout.uz/wp-content/uploads/2025/03/02_SCAR_New_18_L-%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png"
+    },
+    {
+      "id": "26",
+      "title": "Asus Zenbook DUO 14",
+      "description": "от $166.6 12/мес",
+      "About": "Asus Zenbook DUO 14 — инновационный ноутбук с двумя экранами для многозадачности и профессиональной работы с контентом.",
+      "price": 1999,
+      "img": "https://nout.uz/wp-content/uploads/2024/11/270-1.png"
+    },
+    {
+      "id": "27",
+      "title": "Acer Nitro 5",
+      "description": "от $91.7 12/мес",
+      "About": "Acer Nitro 5 — доступный и мощный игровой ноутбук с ярким дизайном и хорошей производительностью для повседневных игр.",
+      "price": 1100,
+      "img": "https://files.glotr.uz/company/000/005/799/products/2021/07/31/2021-07-31-12-13-26-846298-d4269fb7bd4e256de138e5187d3249e8.jpg?_=ozb9y"
+    },
+    {
+      "id": "28",
+      "title": "Acer Nitro 16",
+      "description": "от $145.2 12/мес",
+      "About": "Acer Nitro 16 — обновлённая версия игровой серии с увеличенным экраном и улучшенной графикой, подходящий для современных игр.",
+      "price": 1742,
+      "img": "https://neostar.uz/upload/resize_cache/iblock/068/340_340_140cd750bba9870f18aada2478b24840a/eobhiulsvbrwbcbq4mcujagnlf0h5dfd.webp"
+    },
+    {
+      "id": "29",
+      "title": "Acer Predator Helios",
+      "description": "от $124.4 12/мес",
+      "About": "Acer Predator Helios — флагманский игровой ноутбук с мощной видеокартой и системой охлаждения для требовательных пользователей.",
+      "price": 1493,
+      "img": "https://dl.bs365.uz/storage/products/25620/K4qPZB2nqwjO0PzFDqYD-home_default.jpg"
+    }
   ],
 
   "monitors": [
