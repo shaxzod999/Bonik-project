@@ -277,7 +277,7 @@ function App() {
           <div className="container5555">
             <div>
               <h4 className="h4">Будь в потоке. </h4>
-              <h1 className="h1">Будь с </h1>
+              <h1 className="h1">Будь с TDNS</h1>
               <h4 className="h4-1">
                 СКИДКИ ДО
                 <span>-30%</span>
