@@ -110,12 +110,9 @@ function Keyboards() {
         <div className="container-footer">
           <ul>
             <li>
-              <a href="/">
-                <img
-                  src="https://bonik-react.vercel.app/assets/images/logo.svg"
-                  alt=""
-                />
-              </a>
+              <Link className="logo-tdns" to={"/"}>
+                TDNS
+              </Link>
             </li>
             <p>
               Мы собрали для вас самые современные гаджеты, <br /> устройства и
