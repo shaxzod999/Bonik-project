@@ -82,7 +82,7 @@ const Card = () => {
       <div className="card-card1">
         <h3>
           Общая стоимость :{" "}
-          {totalPrices?.reduce((acc, price) => acc + price, 0)} ₽
+          {Math.round(totalPrices?.reduce((acc, price) => acc + price, 0))} ₽
         </h3>
         {JSON.parse(localStorage.getItem("card"))?.length > 0 ? (
           <button onClick={order} className="btn1">
@@ -92,6 +92,7 @@ const Card = () => {
           ""
         )}
       </div>
+
       {status ? (
         <div className="d-flex justify-content-center">
           <img
@@ -132,9 +133,10 @@ const Card = () => {
                   >
                     <td className="td">{item.title}</td>
                     <td style={{ color: "rgb(233, 69, 96)" }}>
-                      {calculateTotalPrice(item, counts[index])} ₽
+                      {Math.round(calculateTotalPrice(item, counts[index]))} ₽
                     </td>
                   </div>
+
                   <td style={{ fontSize: "19px", fontWeight: "bold" }}>
                     {item.count}
                   </td>
