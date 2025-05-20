@@ -77,11 +77,8 @@ function Navbar() {
       <div className="cintainer-big1">
         <div className="Navbar">
           <div className="mobileMenuOpen">
-            <Link className="logo" to={"/"}>
-              <img
-                src="https://bonik-react.vercel.app/assets/images/logo.svg"
-                alt=""
-              />
+            <Link className="logo logo-tdns" to={"/"}>
+              TDNS
             </Link>
             <div
               className="mobile-toggle"
@@ -92,11 +89,8 @@ function Navbar() {
           </div>
 
           <div className={`container11 ${mobileMenuOpen ? "open" : ""}`}>
-            <Link className="logo-2" to={"/"}>
-              <img
-                src="https://bonik-react.vercel.app/assets/images/logo.svg"
-                alt=""
-              />
+            <Link className="logo-2 logo-tdns" to={"/"}>
+              TDNS
             </Link>
             <div className="dropdown-container" ref={dropdownRef}>
               <button onClick={handleDropdownClick}>

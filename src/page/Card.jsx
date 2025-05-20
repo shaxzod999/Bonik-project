@@ -40,12 +40,23 @@ const Card = () => {
     if (newCount[index] > 1) {
       newCount[index]--;
       setCounts(newCount);
+      upgradeTotalPrice(index, newCount[index]); // << BU QO‘SHILMAGAN
       upgradeLocalStorage(index, newCount[index]);
     } else {
       const newCard = [...card];
       newCard.splice(index, 1);
+
+      const newCounts = [...counts];
+      newCounts.splice(index, 1);
+
+      const newPrices = [...totalPrices];
+      newPrices.splice(index, 1);
+
       setCard(newCard);
-      window.location.reload();
+      setCounts(newCounts);
+      setTotalPrices(newPrices);
+
+      localStorage.setItem("card", JSON.stringify(newCard));
     }
   };
 
@@ -65,15 +76,13 @@ const Card = () => {
   };
 
   return (
-    <div
-      className="container-card"
-    >
+    <div className="container-card">
       <Navbar />
       <h2 className="h2-1">В Корзину</h2>
       <div className="card-card1">
         <h3>
           Общая стоимость :{" "}
-          {totalPrices?.reduce((acc, price) => acc + price, 0)} $
+          {totalPrices?.reduce((acc, price) => acc + price, 0)} ₽
         </h3>
         {JSON.parse(localStorage.getItem("card"))?.length > 0 ? (
           <button onClick={order} className="btn1">
@@ -112,10 +121,7 @@ const Card = () => {
               {card?.map((item, index) => (
                 <div className="card-card">
                   <div className="card-card-img">
-                    <img
-                      src={item.img}
-                      alt=""
-                    />
+                    <img src={item.img} alt="" />
                   </div>
                   <div
                     style={{
@@ -124,11 +130,9 @@ const Card = () => {
                       gap: "10px",
                     }}
                   >
-                    <td className="td">
-                      {item.title}
-                    </td>
+                    <td className="td">{item.title}</td>
                     <td style={{ color: "rgb(233, 69, 96)" }}>
-                      {calculateTotalPrice(item, counts[index])} $
+                      {calculateTotalPrice(item, counts[index])} ₽
                     </td>
                   </div>
                   <td style={{ fontSize: "19px", fontWeight: "bold" }}>

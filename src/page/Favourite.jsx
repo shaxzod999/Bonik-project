@@ -48,7 +48,7 @@ const Favourite = () => {
                     </div>
                     <p>{item.title}</p>
                     <span>{item.description}</span>
-                    <p className="cost">${item.price}</p>
+                    <p className="cost">{item.price}₽</p>
                   </div>
                 </Link>
                 <button onClick={() => decreament(index)} className="btn1">

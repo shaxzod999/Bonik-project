@@ -61,7 +61,7 @@ function Phones() {
                   </div>
                   <p>{item.title}</p>
                   <span>{item.description}</span>
-                  <p className="cost">${item.price}</p>
+                  <p className="cost">{item.price}₽</p>
                 </div>
               </Link>
 

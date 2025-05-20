@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -47,6 +48,15 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.logo-tdns {
+  font-size: 30px;
+  font-weight: 900;
+  color: #e94560 !important;
+  font-family: "Playwrite DK Loopet", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .Navbar {
@@ -866,7 +876,7 @@ footer ul li:nth-child(1) {
 .product-card-button {
   background-color: #0f3460 !important;
 }
-.mobileMenuOpen{
+.mobileMenuOpen {
   display: none;
 }
 

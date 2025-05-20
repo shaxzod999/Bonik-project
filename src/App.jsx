@@ -94,11 +94,8 @@ function App() {
       <div className="container-big1">
         <div className="Navbar">
           <div className="mobileMenuOpen">
-            <Link className="logo" to={"/"}>
-              <img
-                src="https://bonik-react.vercel.app/assets/images/logo.svg"
-                alt=""
-              />
+            <Link className="logo logo-tdns" to={"/"}>
+              TDNS
             </Link>
             <div
               className="mobile-toggle"
@@ -109,11 +106,8 @@ function App() {
           </div>
 
           <div className={`container11 ${mobileMenuOpen ? "open" : ""}`}>
-            <Link className="logo-2" to={"/"}>
-              <img
-                src="https://bonik-react.vercel.app/assets/images/logo.svg"
-                alt=""
-              />
+            <Link className="logo-2 logo-tdns" to={"/"}>
+              TDNS
             </Link>
             <div className="dropdown-container" ref={dropdownRef}>
               <button onClick={handleDropdownClick}>
@@ -283,7 +277,7 @@ function App() {
           <div className="container5555">
             <div>
               <h4 className="h4">Будь в потоке. </h4>
-              <h1 className="h1">Будь с BONIK</h1>
+              <h1 className="h1">Будь с </h1>
               <h4 className="h4-1">
                 СКИДКИ ДО
                 <span>-30%</span>
@@ -372,7 +366,7 @@ function App() {
                     </div>
                     <p>{item.title}</p>
                     <span>{item.description}</span>
-                    <p className="cost">${item.price}</p>
+                    <p className="cost">{item.price}₽</p>
                   </div>
                 </Link>
 

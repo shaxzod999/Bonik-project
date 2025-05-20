@@ -48,7 +48,7 @@ const Product = () => {
             <div>
               <span>{product.description}</span>
               <p>
-                Price: <h4> ${product.price} </h4>
+                Price: <h4> {product.price}₽ </h4>
               </p>
             </div>
             <button
